@@ -1,5 +1,4 @@
 // next image
-import Image from "next/image";
 import { motion } from 'framer-motion'
 
 
@@ -11,7 +10,7 @@ import Avatar from "../components/Avatar";
 
 //variants
 import { fadeIn } from '../variants'
-import { BsArrowRight } from "react-icons/bs";
+
 
 const Home = () => {
 

@@ -84,6 +84,7 @@ import { SiTailwindcss, SiNextdotjs, SiPostgresql, SiSqlite, SiGit, SiReact, SiV
 import SwiperCore, { Pagination } from 'swiper'
 import Image from 'next/image';
 import { FaNodeJs } from 'react-icons/fa';
+import Link from 'next/link';
 
 // Adiciones
 SwiperCore.use([Pagination])
@@ -114,10 +115,10 @@ const WorkSlider = () => {
                       {/* tittle */}
                       <div className=" absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
                         <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
-                          <div className=' space-x-2 translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150 text-5xl flex '>{image.icon}</div>
+                         <div className=' space-x-2 translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150 text-5xl flex '>{image.icon}</div>
                         </div>
                       </div>
-                    </div>
+                    </div>  
                   </div>
                 );
               })}

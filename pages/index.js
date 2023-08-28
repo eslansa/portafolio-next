@@ -47,7 +47,7 @@ const Home = () => {
         {/*avatar img */}
         <motion.div
           variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit='hidden' transition={{ duration: 1, ease: 'easeInOut' }}
-          className=' w-full max-w-[800px] max-h-[700px] absolute -bottom-32 lg:bottom-0 lg:right-[8%] bg-hero'>
+          className=' w-full max-w-[950px] max-h-[850px] absolute -bottom-32 lg:bottom-0 lg:right-[2%] bg-hero'>
           <Avatar />
         </motion.div>
       </div>

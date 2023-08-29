@@ -2,7 +2,7 @@ import { FaCss3, FaHtml5, FaJs, FaReact, FaNodeJs, } from 'react-icons/fa'
 import { SiTailwindcss, SiNextdotjs, SiPostgresql, SiSqlite, SiGit } from 'react-icons/si'
 
 //data
-const aboutData = [
+const aboutData  = () =>  [
     {
       title: 'Habilidades',
       info: [

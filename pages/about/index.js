@@ -1,89 +1,8 @@
 import React, { useState } from 'react'
 
 
-import { FaCss3, FaHtml5, FaJs, FaReact, FaNodeJs, } from 'react-icons/fa'
-import { SiTailwindcss, SiNextdotjs, SiPostgresql, SiSqlite, SiGit } from 'react-icons/si'
+import aboutData from './data';
 
-
-//  data
-const aboutData = [
-  {
-    title: 'Habilidades',
-    info: [
-      {
-        skills: [
-          {
-            icon: <FaHtml5 />,
-            name: 'HTML5'
-          },
-          {
-            icon: <FaCss3 />,
-            name: 'CSS'
-          },
-          {
-            icon: <FaJs />,
-            name: 'JavaScript'
-          },
-          {
-            icon: <FaReact />,
-            name: 'React'
-          },
-          {
-            icon: <FaNodeJs />,
-            name: 'NodeJS'
-          },
-          {
-            icon: <SiNextdotjs />,
-            name: 'Next'
-          },
-          {
-            icon: <SiTailwindcss />,
-            name: 'TailwindCSS'
-          },
-          {
-            icon: <SiPostgresql />,
-            name: 'PostrgresSQL'
-          },
-          {
-            icon: <SiSqlite />,
-            name: 'SQLite'
-          },
-          {
-            icon: <SiGit />,
-            name: 'Git'
-          },
-
-        ],
-      },
-    ],
-  },
-  {
-    title: 'Experiencia',
-    info: [
-      {
-        title: 'Desarrollador Web - Autodidacta',
-        stage: '2023',
-      },
-      {
-        title: 'Desarrollador Frontend - Xetid',
-        stage: '2023',
-      },
-    ],
-  },
-  {
-    title: 'Educación',
-    info: [
-      {
-        title: 'IPU - Pedro Valdivia Paz, Ciego de Avila, Cuba.',
-        stage: '2016-2019',
-      },
-      {
-        title: 'Universidad - UCI, La Habana, Cuba.',
-        stage: '2020 - Cursando',
-      },
-    ],
-  },
-];
 
 //componentes
 import Avatar from '../../components/Avatar';
@@ -101,22 +20,22 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className='text-center xl:text-left h-full mt-5 bg-primary/30 py-36 flex items-center '>
+    <div className='text-center xl:text-left h-full bg-primary/30 py-28 '>
       <Circles />
       {/* avatar img */}
       <motion.div variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden'
-        className='hidden xl:flex absolute bottom-0 -left-[550px] '>
+        className='hidden xl:flex absolute bottom-0 -left-[550px]'>
         <Avatar />
       </motion.div>
-      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 '>
+      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         {/* text */}
-        <div className='flex-8 flex-col items-center justify-center'>
+        <div className='flex-1 flex-col justify-center'>
           <motion.h2
             variants={fadeIn('right', 0.4)} initial='hidden' animate='show' exit='hidden'
-            className='h2'>Algunos datos <span className=' text-accent'><br /> sobre mi</span> en el mundo del <span className=' text-accent'>desarrollo web</span></motion.h2>
+            className='h2'>Datos <span className=' text-accent'><br /> sobre mi</span> en el <span className=' text-accent'>desarrollo web</span></motion.h2>
           <motion.p
             variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden'
-            className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 '>Mi pasión por la web empezó en 2019, hice proyectos  sencillos con HTML, CSS, JavaScript. No tenía muchos vínculos con este mundo y me costaba encontrar informacion, después en 2020 entre a la Universidad y ahí empezo todo!</motion.p>
+            className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-1 xl:px-0 '>Mi pasión por la web empezó en 2019, hice proyectos  sencillos con HTML, CSS, JavaScript. No tenía muchos vínculos con este mundo y me costaba encontrar informacion, después en 2020 entre a la Universidad y ahí empezo todo!</motion.p>
           {/* counters */}
           <motion.div
             variants={fadeIn('right', 0.6)} initial='hidden' animate='show' exit='hidden'

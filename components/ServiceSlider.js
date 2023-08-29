@@ -27,17 +27,17 @@ const serviceData = [
   {
     icon: <RxLayers />,
     title: 'Gestion BD',
-    description: 'Gestiona los datos de tu aplicación con eficiencia y rápidez. Qué esperas!',
+    description: 'Gestiona todos los datos de tu aplicación con eficiencia y rápidez. Qué esperas!',
   },
   {
     icon: <RxReader />,
     title: 'Redacción Publicitaria',
-    description: 'Tienes el producto, busca la manera de venderlo.',
+    description: 'Tienes el producto, convence al cliente de que tu eres el mejor lugar.',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Mejora el posicionamiento de tu página, hazla que sea la #1.',
+    description: 'Mejora el posicionamiento de tu página, hazla rápida, responsiva y eficiente, ponla #1.',
   },
 ];
 

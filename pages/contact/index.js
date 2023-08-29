@@ -48,6 +48,7 @@ const Contact = () => {
             <div className='flex gap-x-6 w-full'>
               <input
                 placeholder="Nombre y Apellidos"
+                type='text'
                 className='input'
                 id="message"
                 name="message"
@@ -57,6 +58,7 @@ const Contact = () => {
                 className='input'
                 id="message"
                 name="message"
+                type='text'
               />
             </div>
             <input
@@ -73,9 +75,11 @@ const Contact = () => {
             />
             <textarea
               id="message"
-              name="message"
-              placeholder="Mensaje"
               className='textarea'
+              name="message"
+              type='text'
+              placeholder="Mensaje"
+
             ></textarea>
             <ValidationError
               prefix="Message"

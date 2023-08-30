@@ -144,8 +144,8 @@ const About = () => {
         {/* info */}
         <motion.div
           variants={fadeIn('left', 0.4)} initial='hidden' animate='show' exit='hidden'
-          className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
-          <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 '>
+          className='flex flex-col w-full xl:max-w-[48%] h-full'>
+          <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 '>
             {aboutData.map((item, itemIndex) => {
               return (
                 <div key={itemIndex}

@@ -101,10 +101,11 @@ const About = () => {
     <div className='text-center xl:text-left h-full bg-primary/30 py-28 '>
       <Circles />
       {/* avatar img */}
-      <motion.div variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden'
-        className='hidden xl:flex absolute bottom-0 -left-[550px]'>
-        <Avatar />
-      </motion.div>
+      <motion.div
+          variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit='hidden' transition={{ duration: 1, ease: 'easeInOut' }}
+          className=' w-full max-w-[950px] max-h-[850px] lg:bottom-0 lg:right-[2%] bg-hero hidden xl:flex absolute bottom-0 -left-[500px]'>
+          <Avatar />
+        </motion.div>
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         {/* text */}
         <div className='flex-1 flex-col justify-center'>

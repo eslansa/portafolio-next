@@ -47,9 +47,9 @@ const Contact = () => {
             {/* group */}
             <div className='flex gap-x-6 w-full'>
               <input
-                placeholder="Nombre y Apellidos"
+                placeholder="Nombre"
                 type='text'
-                className='input'
+                className='input truncate truncate::placeholder'
                 id="message"
                 name="message"
               />

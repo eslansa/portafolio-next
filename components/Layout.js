@@ -20,7 +20,7 @@ const Layout = ({children}) => {
     <Header  />
     <TopLeftImg />
     <Nav />
-    <main>{children}</main>
+    {children}
    </div>
    </>
   )

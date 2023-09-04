@@ -57,7 +57,7 @@ const workSlider = {
           icon: [
             'SiReact',
             'SiNextdotjs',
-           'SiTailwindcss',
+            'SiTailwindcss',
             'SiFramer',
           ]
         },

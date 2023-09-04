@@ -13,9 +13,9 @@ const ParticlesContainer = () => {
   );
 
   return (
-    <Particles 
-    className='w-full h-full absolute translate-z-0' 
-    id='tsparticles' init={particlesInit} loaded={particlesLoaded}
+    <Particles
+      className='w-full h-full absolute translate-z-0'
+      id='tsparticles' init={particlesInit} loaded={particlesLoaded}
       options={{
         fullScreen: { enable: false },
         background: {
@@ -84,7 +84,7 @@ const ParticlesContainer = () => {
             type: 'circle'
           },
           size: {
-            value: {min: 1, max: 5},
+            value: { min: 1, max: 5 },
           }
         },
         detectRetina: true,

@@ -3,7 +3,7 @@ import { FaCss3, FaHtml5, FaJs, FaReact, FaNodeJs } from 'react-icons/fa'
 import { SiTailwindcss, SiNextdotjs, SiPostgresql, SiSqlite, SiGit } from 'react-icons/si'
 
 //data
-const aboutData  = [
+const aboutData = [
   {
     title: 'Habilidades',
     info: [
@@ -144,7 +144,7 @@ const About = () => {
         {/* info */}
         <motion.div
           variants={fadeIn('left', 0.4)} initial='hidden' animate='show' exit='hidden'
-          className='flex flex-col w-full xl:max-w-[48%] h-full'>
+          className='flex flex-col  w-full xl:max-w-[48%] h-full'>
           <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 '>
             {aboutData.map((item, itemIndex) => {
               return (
@@ -175,8 +175,8 @@ const About = () => {
                       return (
                         <div key={skillIndex} className='space-x-5 xl:flex text-2xl  text-white group flex-row flex '>
                           {skills.icon}
-                          <div className='hidden lg:block '>  
-                               {skills.name}
+                          <div className='hidden lg:block '>
+                            {skills.name}
                           </div>
                         </div>
                       );

@@ -18,10 +18,10 @@ import Avatar from '../../components/Avatar';
 const Contact = () => {
   const [state, handleSubmit] = useForm("xjvqwlwq");
   if (state.succeeded) {
-    return ( 
-    <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
-    <p className='h2 justify-center items-center flex'>Gracias <span className=' text-accent'>!</span></p>
-    </div>
+    return (
+      <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
+        <p className='h2 justify-center items-center flex'>Gracias <span className=' text-accent'>!</span></p>
+      </div>
     )
   }
 

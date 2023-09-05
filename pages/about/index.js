@@ -97,7 +97,6 @@ const About = () => {
   return (
     <div className='text-center xl:text-left h-full bg-primary/30 py-28 '>
       <Circles />
-      {/* avatar img */}
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         {/* text */}
         <div className='flex-1 flex-col justify-center'>

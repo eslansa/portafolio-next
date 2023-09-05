@@ -13,7 +13,7 @@ import { motion } from 'framer-motion'
 
 //variants
 import { fadeIn } from '../../variants'
-import Avatar from '../../components/Avatar';
+
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xjvqwlwq");

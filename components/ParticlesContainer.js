@@ -1,7 +1,7 @@
 import { Particles } from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
 import React, { useCallback } from 'react'
-import { distance } from 'framer-motion';
+
 
 const ParticlesContainer = () => {
   //init
@@ -90,8 +90,6 @@ const ParticlesContainer = () => {
         detectRetina: true,
       }}
     />
-
-
   )
 };
 

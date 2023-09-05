@@ -108,13 +108,13 @@ const WorkSlider = () => {
       pagination={{
         clickable: true,
       }}
-      className='h-[280px] sm:h-[480px]'
+      className=' justify-center'
     >
       {
         workSlider.slides.map((slide, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className=' grid grid-cols-1 gap-2 cursor-pointer'>
+              <div className=' grid  gap-2 cursor-pointer'>
                 {slide.images.map((image, imageIndex) => {
                   return (
                     <div key={`${index}-${imageIndex}`} className='relative rounded-lg overflow-hidden flex items-center justify-center group'>
@@ -128,7 +128,7 @@ const WorkSlider = () => {
                         <div className=" absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
                           <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
                             {image.icon.map((icon, index) => (
-                              <div key={index} className=' space-x-2 translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150 text-5xl flex '>
+                              <div key={index} className=' space-x-2 translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150 text-4xl flex '>
                                 {ICONS[icon]}
                               </div>
                             ))}

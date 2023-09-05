@@ -28,7 +28,7 @@ const Work = () => {
           {/* slider */}
           <motion.div
             variants={fadeIn('down', 0.6)} initial='hidden' animate='show' exit='hidden'
-            className='w-full xl:max-w-[65%] md:max-w-[35%]'>
+            className='w-full xl:max-w-[35%] md:flex-1 '>
             <WorkSlider />
           </motion.div>
         </div>

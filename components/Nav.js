@@ -4,8 +4,14 @@ import {
   HiUser,
   HiViewColumns,
   HiRectangleGroup,
-  HiEnvelope,
-} from 'react-icons/hi2';
+  HiEnvelope
+} from 'react-icons/hi2'
+
+// next link
+import Link from 'next/link'
+
+// next router
+import { useRouter } from 'next/router'
 
 // nav data
 export const navData = [
@@ -13,18 +19,12 @@ export const navData = [
   { name: 'Información', path: '/about', icon: <HiUser /> },
   { name: 'Servicio', path: '/services', icon: <HiRectangleGroup /> },
   { name: 'Proyectos', path: '/work', icon: <HiViewColumns /> },
-  { name: 'Contacto', path: '/contact', icon: <HiEnvelope />, },
-];
-
-// next link 
-import Link from 'next/link'
-
-//next router
-import { useRouter } from 'next/router'
+  { name: 'Contacto', path: '/contact', icon: <HiEnvelope /> }
+]
 
 const Nav = () => {
-  const router = useRouter();
-  const pathname = router.pathname;
+  const router = useRouter()
+  const pathname = router.pathname
   return (
     <nav className='flex flex-col items-center xl:justify-center gap-y-2 fixed h-max mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen bottom-0'>
       {/* inner */}
@@ -35,7 +35,8 @@ const Nav = () => {
               className={`${link.path === pathname && 'text-accent'
                 } relative flex items-center group hover:text-accent transition-all duration-300`}
               href={link.path}
-              key={index}>
+              key={index}
+            >
               {/* tooltip */}
               <div className='absolute pr-14 right-0 hidden xl:group-hover:flex'>
                 <div className='bg-white relative flex text-primary items-center p-[6px] rounded-[3px]'>
@@ -43,7 +44,7 @@ const Nav = () => {
                     {link.name}
                   </div>
                   {/* triangle */}
-                  <div className='border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2'></div>
+                  <div className='border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2' />
                 </div>
               </div>
               {/* icons */}
@@ -56,7 +57,6 @@ const Nav = () => {
       </div>
     </nav>
   )
-};
+}
 
-export default Nav;
-
+export default Nav

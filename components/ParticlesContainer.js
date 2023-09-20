@@ -2,15 +2,14 @@ import { Particles } from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
 import React, { useCallback } from 'react'
 
-
 const ParticlesContainer = () => {
-  //init
+  // init
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine)
-  }, []);
+  }, [])
 
   const particlesLoaded = useCallback(async (engine) => { }, []
-  );
+  )
 
   return (
     <Particles
@@ -21,7 +20,7 @@ const ParticlesContainer = () => {
         background: {
           color: {
             value: ''
-          },
+          }
         },
         fpsLimit: 120,
         interactivity: {
@@ -34,7 +33,7 @@ const ParticlesContainer = () => {
               enable: true,
               mode: 'repulse'
             },
-            resize: true,
+            resize: true
           },
           modes: {
             push: {
@@ -42,7 +41,7 @@ const ParticlesContainer = () => {
             },
             repulse: {
               distance: 200,
-              duration: 0.4,
+              duration: 0.4
             }
           }
         },
@@ -58,7 +57,7 @@ const ParticlesContainer = () => {
             width: 1
           },
           collisions: {
-            enable: true,
+            enable: true
           },
           move: {
             directions: 'none',
@@ -68,7 +67,7 @@ const ParticlesContainer = () => {
             },
             random: false,
             speed: 1,
-            straight: false,
+            straight: false
           },
           number: {
             density: {
@@ -78,19 +77,19 @@ const ParticlesContainer = () => {
             value: 80
           },
           opacity: {
-            value: 0.5,
+            value: 0.5
           },
           shape: {
             type: 'circle'
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 1, max: 5 }
           }
         },
-        detectRetina: true,
+        detectRetina: true
       }}
     />
   )
-};
+}
 
-export default ParticlesContainer;
+export default ParticlesContainer

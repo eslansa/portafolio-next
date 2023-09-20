@@ -1,22 +1,24 @@
-//next 
+// next
 import Link from 'next/link'
 
-//components
+// components
 import Socials from '../components/Socials'
 
 const Header = () => {
-  return <header className="absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]">
-    <div className=" container mx-auto">
-      <div className='flex flex-col lg:flex-row justify-between items-center gap-y-0 py-5'>
-        {/* logo */}
-        <Link href={'/'}>
-          <h2 className=' h2 flex items-center'>eslan<span className='text-accent'>.sa</span> </h2>
-        </Link>
-        {/* socials */}
-        <Socials />
+  return (
+    <header className='absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]'>
+      <div className=' container mx-auto'>
+        <div className='flex flex-col lg:flex-row justify-between items-center gap-y-0 py-5'>
+          {/* logo */}
+          <Link href='/'>
+            <h2 className=' h2 flex items-center'>eslan<span className='text-accent'>.sa</span> </h2>
+          </Link>
+          {/* socials */}
+          <Socials />
+        </div>
       </div>
-    </div>
-  </header>;
-};
+    </header>
+  )
+}
 
-export default Header;
+export default Header

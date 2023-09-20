@@ -1,17 +1,17 @@
-import '../styles/globals.css';
+import '../styles/globals.css'
 
-//components
-import Layout from '../components/Layout';
-import Transition from '../components/Transition';
+// components
+import Layout from '../components/Layout'
+import Transition from '../components/Transition'
 
 // router
 import { useRouter } from 'next/router'
 
-//framer motion
+// framer motion
 import { AnimatePresence, motion } from 'framer-motion'
 
-function MyApp({ Component, pageProps }) {
-  const router = useRouter();
+function MyApp ({ Component, pageProps }) {
+  const router = useRouter()
   return (
     <Layout>
       <AnimatePresence mode='wait'>
@@ -24,4 +24,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp;
+export default MyApp

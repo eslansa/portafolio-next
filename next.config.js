@@ -3,10 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    runtime: 'experimental-edge',
+    runtime: 'experimental-edge'
   },
   reactStrictMode: true,
-  swcMinify: true,
+  swcMinify: true
 }
 
 module.exports = nextConfig

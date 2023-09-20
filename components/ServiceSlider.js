@@ -17,40 +17,40 @@ const serviceData = [
   {
     icon: <RxCode />,
     title: 'Desarrollador',
-    description: 'Este es mi favorito, me encanta desarrollar proyectos, cuéntame tu idea!',
+    description: 'Este es mi favorito, me encanta desarrollar proyectos, cuéntame tu idea!'
   },
   {
     icon: <RxPencil2 />,
     title: 'Diseño',
-    description: 'Lo importante que es tener un diseño en tu página web, el cual sea de agrado al usuario.',
+    description: 'Lo importante que es tener un diseño en tu página web, el cual sea de agrado al usuario.'
   },
   {
     icon: <RxLayers />,
     title: 'Gestion BD',
-    description: 'Gestiona todos los datos de tu aplicación con eficiencia y rápidez. Qué esperas!',
+    description: 'Gestiona todos los datos de tu aplicación con eficiencia y rápidez. Qué esperas!'
   },
   {
     icon: <RxReader />,
     title: 'Redacción Publicitaria',
-    description: 'Tienes el producto, convence al cliente de que tu eres el mejor lugar.',
+    description: 'Tienes el producto, convence al cliente de que tu eres el mejor lugar.'
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Mejora el posicionamiento de tu página, hazla rápida, responsiva y eficiente, ponla #1.',
-  },
-];
+    description: 'Mejora el posicionamiento de tu página, hazla rápida, responsiva y eficiente, ponla #1.'
+  }
+]
 
 const ServiceSlider = () => {
   return (
     <Swiper
       breakpoints={{
         320: { slidesPerView: 1, spaceBetween: 15 },
-        640: { slidesPerView: 3, spaceBetween: 15 },
+        640: { slidesPerView: 3, spaceBetween: 15 }
       }}
-      freeMode={true}
+      freeMode
       pagination={{
-        clickable: true,
+        clickable: true
       }}
       className='h-[240px] sm:h-[340px]'
     >
@@ -67,14 +67,14 @@ const ServiceSlider = () => {
               </div>
               {/* arrows */}
               <div className='text-3xl'>
-                <Link href="mailto:eslansanchez12345@gmail.com"><RxArrowTopRight className=' group-hover:rotate-45 group-hover:text-accent transition-all duration-300' /></Link>
+                <Link href='mailto:eslansanchez12345@gmail.com'><RxArrowTopRight className=' group-hover:rotate-45 group-hover:text-accent transition-all duration-300' /></Link>
               </div>
             </div>
           </SwiperSlide>
-        );
+        )
       })}
     </Swiper>
   )
-};
+}
 
-export default ServiceSlider;
+export default ServiceSlider

@@ -1,4 +1,19 @@
 // data
+// Swiper
+import { Swiper, SwiperSlide } from 'swiper/react'
+// Swiper Styles
+import 'swiper/css'
+import 'swiper/css/free-mode'
+import 'swiper/css/pagination'
+
+// Icons
+import { SiTailwindcss, SiNextdotjs, SiPostgresql, SiSqlite, SiGit, SiReact, SiVite, SiMui, SiNodemon, SiFramer, SiJavascript, SiCss3 } from 'react-icons/si'
+
+import SwiperCore, { Pagination } from 'swiper'
+import Image from 'next/image'
+import { FaNodeJs } from 'react-icons/fa'
+import Link from 'next/link'
+
 const workSlider = {
   slides: [
     {
@@ -12,13 +27,13 @@ const workSlider = {
         },
         {
           title: 'title',
-          path: "/foto2.png",
+          path: '/foto2.png',
           icon: [
             'SiVite',
-            'SiReact',
+            'SiReact'
           ]
-        },
-      ],
+        }
+      ]
     },
     {
       images: [
@@ -27,28 +42,28 @@ const workSlider = {
           path: '/foto3.png',
           icon: [
             'SiVite',
-            'SiReact',
+            'SiReact'
           ]
         },
         {
           title: 'title',
-          path: "/foto1.jpg",
+          path: '/foto1.jpg',
           icon: [
             'SiCss3',
             'SiJavascript',
-            'SiReact',
+            'SiReact'
           ]
-        },
+        }
       ]
     },
     {
       images: [
         {
           title: 'title',
-          path: "/foto-5.png",
+          path: '/foto-5.png',
           icon: [
             'SiReact',
-            'SiMui',
+            'SiMui'
           ]
         },
         {
@@ -58,13 +73,13 @@ const workSlider = {
             'SiReact',
             'SiNextdotjs',
             'SiTailwindcss',
-            'SiFramer',
+            'SiFramer'
           ]
-        },
-      ],
-    },
-  ],
-};
+        }
+      ]
+    }
+  ]
+}
 
 const ICONS = {
   SiReact: <SiReact />,
@@ -77,36 +92,19 @@ const ICONS = {
   SiJavascript: <SiJavascript />,
   SiTailwindcss: <SiTailwindcss />,
   SiFramer: <SiFramer />,
-  SiNextdotjs: <SiNextdotjs />,
+  SiNextdotjs: <SiNextdotjs />
 
 }
 
-// Swiper
-import { Swiper, SwiperSlide } from 'swiper/react'
-// Swiper Styles
-import 'swiper/css'
-import 'swiper/css/free-mode'
-import 'swiper/css/pagination'
-
-
-// Icons
-import { SiTailwindcss, SiNextdotjs, SiPostgresql, SiSqlite, SiGit, SiReact, SiVite, SiMui, SiNodemon, SiFramer, SiJavascript, SiCss3 } from 'react-icons/si'
-
-import SwiperCore, { Pagination } from 'swiper'
-import Image from 'next/image';
-import { FaNodeJs } from 'react-icons/fa';
-import Link from 'next/link';
-
 // Adiciones
 SwiperCore.use([Pagination])
-
 
 const WorkSlider = () => {
   return (
     <Swiper
       spaceBetween={10}
       pagination={{
-        clickable: true,
+        clickable: true
       }}
       className=' justify-center'
     >
@@ -122,11 +120,10 @@ const WorkSlider = () => {
                         {/* image */}
                         <Image src={image.path} width={400} height={300} alt='' />
                         {/* overlay gradient */}
-                        <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#8e295f] to-[#1e114b] opacity-0 group-hover:opacity-80 transition-all duration-700  '>
-                        </div>
+                        <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#8e295f] to-[#1e114b] opacity-0 group-hover:opacity-80 transition-all duration-700  ' />
                         {/* tittle */}
-                        <div className=" absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
-                          <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
+                        <div className=' absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
+                          <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
                             {image.icon.map((icon, index) => (
                               <div key={index} className=' space-x-2 translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150 text-4xl flex '>
                                 {ICONS[icon]}
@@ -136,15 +133,15 @@ const WorkSlider = () => {
                         </div>
                       </div>
                     </div>
-                  );
+                  )
                 })}
               </div>
             </SwiperSlide>
-          );
-        })}
+          )
+        })
+}
     </Swiper>
   )
-};
+}
 
-export default WorkSlider;
-
+export default WorkSlider

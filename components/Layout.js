@@ -1,5 +1,10 @@
-//fonts
+// fonts
 import { Sora } from '@next/font/google'
+
+// componetes
+import Nav from '../components/Nav'
+import Header from '../components/Header'
+import TopLeftImg from '../components/TopLeftImg'
 
 // font settings
 const sora = Sora({
@@ -7,12 +12,6 @@ const sora = Sora({
   variable: '--font-sora',
   weight: ['100', '200', '300', '400', '500', '600', '700', '800']
 })
-
-//componetes
-import Nav from '../components/Nav'
-import Header from '../components/Header'
-import TopLeftImg from '../components/TopLeftImg'
-
 
 const Layout = ({ children }) => {
   return (
@@ -22,7 +21,7 @@ const Layout = ({ children }) => {
       <Nav />
       {children}
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

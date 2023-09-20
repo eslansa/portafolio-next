@@ -2,7 +2,7 @@
 import { useForm, ValidationError } from '@formspree/react'
 
 // components
-import Circles from '../../../../components/Circles'
+import Circles from '../../components/Circles'
 
 // icons
 import { BsArrowRight } from 'react-icons/bs'
@@ -89,6 +89,7 @@ const Contact = () => {
               <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]' />
             </button>
           </motion.form>
+          <Circles />
         </div>
       </div>
     </div>

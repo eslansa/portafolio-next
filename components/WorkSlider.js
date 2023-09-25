@@ -60,14 +60,6 @@ const workSlider = {
       images: [
         {
           title: 'title',
-          path: '/foto-5.png',
-          icon: [
-            'SiReact',
-            'SiMui'
-          ]
-        },
-        {
-          title: 'title',
           path: '/foto6.png',
           icon: [
             'SiReact',

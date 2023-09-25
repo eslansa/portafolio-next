@@ -19,7 +19,8 @@ module.exports = {
       sm: '600px',
       md: '768px',
       lg: '960px',
-      xl: '1200px'
+      xl: '1200px',
+      'custom': '1201px',
     },
     extend: {
       colors: {
@@ -48,5 +49,7 @@ module.exports = {
       DEFAULT: '15px'
     }
   },
+  
   plugins: [require('tailwind-scrollbar')]
+  
 }

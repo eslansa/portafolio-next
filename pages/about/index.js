@@ -174,13 +174,13 @@ const About = () => {
                   <div className=' font-light mb-2 md:mb-0'> {item.title} </div>
                   <div className='hidden md:flex' />
                   <div> {item.stage} </div>
-                  <div className='flex gap-y-4 flex-row md:flex-col'>
+                  <div className='flex gap-y-4 flex-row custom:flex-col'>
                     {/* icons */}
                     {item.skills?.map((skills, skillIndex) => {
                       return (
                         <div key={skillIndex} className='space-x-5 xl:flex text-2xl  text-white group flex-row flex '>
                           {skills.icon}
-                          <div className='hidden lg:block '>
+                          <div className='hidden custom:block '>
                             {skills.name}
                           </div>
                         </div>

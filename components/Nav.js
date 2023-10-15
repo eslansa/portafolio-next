@@ -16,10 +16,10 @@ import { useRouter } from 'next/router'
 // nav data
 export const navData = [
   { name: 'Inicio', path: '/', icon: <HiHome /> },
-  { name: 'Información', path: '/about', icon: <HiUser /> },
-  { name: 'Servicio', path: '/services', icon: <HiRectangleGroup /> },
-  { name: 'Proyectos', path: '/work', icon: <HiViewColumns /> },
-  { name: 'Contacto', path: '/contact', icon: <HiEnvelope /> }
+  { name: 'Información', path: '/info', icon: <HiUser /> },
+  { name: 'Servicio', path: '/servicios', icon: <HiRectangleGroup /> },
+  { name: 'Proyectos', path: '/proyectos', icon: <HiViewColumns /> },
+  { name: 'Contacto', path: '/contacto', icon: <HiEnvelope /> }
 ]
 
 const Nav = () => {

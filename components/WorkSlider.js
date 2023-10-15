@@ -16,6 +16,7 @@ import SwiperCore, { Pagination } from 'swiper'
 import Image from 'next/image'
 import { FaNodeJs } from 'react-icons/fa'
 import Link from 'next/link'
+import { fadeIn } from '../variants'
 
 const workSlider = {
   slides: [

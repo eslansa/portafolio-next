@@ -1,12 +1,9 @@
-// fonts
+import Head from 'next/head'
 import { Sora } from '@next/font/google'
-
-// componetes
 import Nav from '../components/Nav'
 import Header from '../components/Header'
 import TopLeftImg from '../components/TopLeftImg'
 
-// font settings
 const sora = Sora({
   subsets: ['latin'],
   variable: '--font-sora',
@@ -14,8 +11,29 @@ const sora = Sora({
 })
 
 const Layout = ({ children }) => {
+  const structuredData = {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Nombre de tu sitio web",
+    "url": "URL de tu sitio web",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "URL de búsqueda en tu sitio web",
+      "query-input": "required name=search_term_string"
+    }
+  }
+
   return (
     <div className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}>
+      <Head>
+        <title>eslansa</title>
+        <meta name="eslansa" content="Portafolio Web de Eslan Sanchez" />
+        <meta property="og:eslansa" content="Eslan" />
+        <meta property="og:Eslan" content="eslansa" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Head>
       <Header />
       <TopLeftImg />
       <Nav />

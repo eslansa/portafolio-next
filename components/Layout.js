@@ -26,10 +26,11 @@ const Layout = ({ children }) => {
   return (
     <div className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}>
       <Head>
-        <title>eslansa</title>
-        <meta name="eslansa" content="Portafolio Web de Eslan Sanchez" />
-        <meta property="og:eslansa" content="Eslan" />
+        <title>Eslan Sanchez Alvarez</title>
+        <meta name="Eslan Sanchez Alvarez" content="Portafolio Web de Eslan Sanchez" />
+        <meta property="og:Eslan Sanchez" content="eslansa" />
         <meta property="og:Eslan" content="eslansa" />
+        <meta property="og:eslansa" content="eslansa" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

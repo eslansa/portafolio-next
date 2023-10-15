@@ -23,12 +23,12 @@ const Socials = () => {
       <Link href='https://twitter.com/lil_eslan' className='hover:text-accent transition-all duration-300'>
         <RiTwitterLine />
       </Link>
-      <Link href='https://t.me/eslan_real' className='hover:text-accent transition-all duration-300'>
+      <Link href='https://t.me/lil_eslan' className='hover:text-accent transition-all duration-300'>
         <RiTelegramLine />
       </Link>
-      <Link href='#' className='hover:text-accent transition-all duration-300'>
+      {/* <Link href='#' className='hover:text-accent transition-all duration-300'>
         <RiLinkedinFill />
-      </Link>
+      </Link> */}
       <Link href='https://github.com/eslansa' className='hover:text-accent transition-all duration-300'>
         <RiGithubLine />
       </Link>

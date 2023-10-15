@@ -5,6 +5,9 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
+// framer motion\
+import { motion } from 'framer-motion'
+
 
 // Icons
 import { SiTailwindcss, SiNextdotjs, SiPostgresql, SiSqlite, SiGit, SiReact, SiVite, SiMui, SiNodemon, SiFramer, SiJavascript, SiCss3 } from 'react-icons/si'
@@ -93,13 +96,18 @@ SwiperCore.use([Pagination])
 
 const WorkSlider = () => {
   return (
-    <Swiper
-      spaceBetween={10}
-      pagination={{
-        clickable: true
-      }}
-      className=' justify-center'
-    >
+<motion.div
+  variants={fadeIn('down', 0.6)} initial='hidden' animate='show' exit='hidden'
+>
+  <Swiper
+    spaceBetween={10}
+    slidesPerView={1}
+    pagination={{
+      clickable: true
+    }}
+    freeMode
+    className=' justify-center'
+  >
       {
         workSlider.slides.map((slide, index) => {
           return (
@@ -133,6 +141,7 @@ const WorkSlider = () => {
         })
 }
     </Swiper>
+    </motion.div>
   )
 }
 

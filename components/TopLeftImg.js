@@ -5,7 +5,7 @@ const TopLeftImg = () => {
   return (
     <div className='absolute top-0 left-0 mix-blend-color-dodge z-10 opacity-40 bg-image hidden sm:flex'>
       <Image
-        loading="lazy" src='/top-left-img.webp' width={400} height={400} style={{
+        src='/top-left-img.webp' width={400} height={400} priority style={{
           objectFit: 'cover'
         }} alt='' className='w-full h-full'
       />

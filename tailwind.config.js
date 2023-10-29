@@ -33,7 +33,8 @@ module.exports = {
         circles: 'url("/bg-circles.webp")',
         circleStar: 'url("/circle-star.svg")',
         site: 'url("/site-bg.svg")',
-        hero: 'url("/img/hero-pattern.svg")'
+        hero: 'url("/img/hero-pattern.svg")',
+        top: 'url("/top-left-img.webp")',
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite'

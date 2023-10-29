@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 
 
 // Icons
-import { SiTailwindcss, SiNextdotjs, SiPostgresql, SiSqlite, SiGit, SiReact, SiVite, SiMui, SiNodemon, SiFramer, SiJavascript, SiCss3 } from 'react-icons/si'
+import { SiTailwindcss, SiNextdotjs, SiPostgresql, SiSqlite, SiGit, SiHtml5, SiReact, SiVite, SiMui, SiNodemon, SiFramer, SiJavascript, SiCss3 } from 'react-icons/si'
 
 import SwiperCore, { Pagination } from 'swiper'
 import Image from 'next/image'
@@ -24,7 +24,7 @@ const workSlider = {
       images: [
         {
           title: 'title',
-          path: '/foto4.png',
+          path: '/foto-4.png',
           icon: [
             'SiReact', 'SiVite', 'SiMui', 'FaNodeJs', 'SiPostgresql'
           ]
@@ -43,10 +43,13 @@ const workSlider = {
       images: [
         {
           title: 'title',
-          path: '/foto3.png',
+          path: '/foto-5.png',
           icon: [
+            'SiHtml5',
+            'SiCss3',
+            'SiJavascript',
+            'SiReact',
             'SiVite',
-            'SiReact'
           ]
         },
         {
@@ -64,6 +67,14 @@ const workSlider = {
       images: [
         {
           title: 'title',
+          path: '/foto3.png',
+          icon: [
+            'SiVite',
+            'SiReact'
+          ]
+        },
+        {
+          title: 'title',
           path: '/foto6.png',
           icon: [
             'SiReact',
@@ -71,9 +82,10 @@ const workSlider = {
             'SiTailwindcss',
             'SiFramer'
           ]
-        }
+        },
       ]
-    }
+    },
+    
   ]
 }
 
@@ -88,7 +100,8 @@ const ICONS = {
   SiJavascript: <SiJavascript />,
   SiTailwindcss: <SiTailwindcss />,
   SiFramer: <SiFramer />,
-  SiNextdotjs: <SiNextdotjs />
+  SiNextdotjs: <SiNextdotjs />,
+  SiHtml5: <SiHtml5/>
 
 }
 
@@ -113,13 +126,13 @@ const WorkSlider = () => {
         workSlider.slides.map((slide, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className=' grid  gap-2 cursor-pointer'>
+              <div className=' grid gap-2 cursor-pointer  md:items-center lg:justify-start'>
                 {slide.images.map((image, imageIndex) => {
                   return (
                     <div key={`${index}-${imageIndex}`} className='relative rounded-lg overflow-hidden flex items-center justify-center group'>
                       <div className=' flex items-center justify-center relative overflow-hidden group opacity-90 rounded-xl'>
                         {/* image */}
-                        <Image src={image.path} width={400} height={300} alt='' />
+                        <Image className="object-cover" src={image.path} width={400} height={200} alt='' />
                         {/* overlay gradient */}
                         <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#8e295f] to-[#1e114b] opacity-0 group-hover:opacity-80 transition-all duration-700  ' />
                         {/* tittle */}

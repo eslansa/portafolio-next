@@ -5,8 +5,9 @@ const nextConfig = {
   experimental: {
     runtime: 'experimental-edge'
   },
-  reactStrictMode: true,
-  swcMinify: true
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
 }
 
 module.exports = nextConfig

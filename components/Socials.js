@@ -1,5 +1,7 @@
 // links
 import Link from 'next/link'
+import {AiOutlineProfile} from 'react-icons/ai'
+
 
 // icons
 import {
@@ -7,7 +9,6 @@ import {
   RiInstagramLine,
   RiFacebookBoxLine,
   RiGithubLine,
-  RiLinkedinFill,
   RiTelegramLine
 } from 'react-icons/ri'
 
@@ -26,11 +27,11 @@ const Socials = () => {
       <Link href='https://t.me/lil_eslan' className='hover:text-accent transition-all duration-300'>
         <RiTelegramLine />
       </Link>
-      {/* <Link href='#' className='hover:text-accent transition-all duration-300'>
-        <RiLinkedinFill />
-      </Link> */}
       <Link href='https://github.com/eslansa' className='hover:text-accent transition-all duration-300'>
         <RiGithubLine />
+      </Link>
+      <Link href='/CV-Eslan Sanchez Alvarez.pdf' className='hover:text-accent transition-all duration-300'>
+        <AiOutlineProfile />
       </Link>
     </div>
   )

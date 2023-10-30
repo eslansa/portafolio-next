@@ -16,12 +16,12 @@ SwiperCore.use([FreeMode, Pagination])
 const serviceData = [
   {
     icon: <RxCode />,
-    title: 'Desarrollador',
+    title: 'Desarrollador Frontend',
     description: 'Este es mi favorito, me encanta desarrollar proyectos, cuéntame tu idea!'
   },
   {
     icon: <RxPencil2 />,
-    title: 'Diseño',
+    title: 'UI/UX',
     description: 'Lo importante que es tener un diseño en tu página web, el cual sea de agrado al usuario.'
   },
   {
@@ -29,16 +29,6 @@ const serviceData = [
     title: 'Gestion BD',
     description: 'Gestiona todos los datos de tu aplicación con eficiencia y rápidez. Qué esperas!'
   },
-  {
-    icon: <RxReader />,
-    title: 'Redacción Publicitaria',
-    description: 'Tienes el producto, convence al cliente de que tu eres el mejor lugar.'
-  },
-  {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Mejora el posicionamiento de tu página, hazla rápida, responsiva y eficiente, ponla #1.'
-  }
 ]
 
 const ServiceSlider = () => {

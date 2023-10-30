@@ -107,7 +107,7 @@ const About = () => {
           <motion.p
             variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-1 xl:px-0 '
-          >Mi pasión por la web empezó en 2019, hice proyectos  sencillos con HTML, CSS, JavaScript. No tenía muchos vínculos con este mundo y me costaba encontrar informacion, después en 2020 entre a la Universidad y ahí empezo todo!
+          >"Mi pasión por la web comenzó en 2019, cuando comencé a trabajar en proyectos sencillos con HTML, CSS y JavaScript. En ese momento, no tenía muchos vínculos con este mundo y me costaba encontrar información. Sin embargo, todo cambió en 2020 cuando ingresé a la universidad. Fue allí donde empecé a entender y aplicar de manera más efectiva mis habilidades de programación web."
           </motion.p>
           {/* counters */}
           <motion.div

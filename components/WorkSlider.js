@@ -8,7 +8,6 @@ import 'swiper/css/pagination'
 // framer motion\
 import { motion } from 'framer-motion'
 
-
 // Icons
 import { SiTailwindcss, SiNextdotjs, SiPostgresql, SiSqlite, SiGit, SiHtml5, SiReact, SiVite, SiMui, SiNodemon, SiFramer, SiJavascript, SiCss3 } from 'react-icons/si'
 
@@ -49,7 +48,7 @@ const workSlider = {
             'SiCss3',
             'SiJavascript',
             'SiReact',
-            'SiVite',
+            'SiVite'
           ]
         },
         {
@@ -82,10 +81,10 @@ const workSlider = {
             'SiTailwindcss',
             'SiFramer'
           ]
-        },
+        }
       ]
-    },
-    
+    }
+
   ]
 }
 
@@ -101,7 +100,7 @@ const ICONS = {
   SiTailwindcss: <SiTailwindcss />,
   SiFramer: <SiFramer />,
   SiNextdotjs: <SiNextdotjs />,
-  SiHtml5: <SiHtml5/>
+  SiHtml5: <SiHtml5 />
 
 }
 
@@ -110,19 +109,19 @@ SwiperCore.use([Pagination])
 
 const WorkSlider = () => {
   return (
-<motion.div
-  variants={fadeIn('down', 0.6)} initial='hidden' animate='show' exit='hidden'
->
-  <Swiper
-    spaceBetween={10}
-    slidesPerView={1}
-    pagination={{
-      clickable: true
-    }}
-    freeMode
-    className=' justify-center'
-  >
-      {
+    <motion.div
+      variants={fadeIn('down', 0.6)} initial='hidden' animate='show' exit='hidden'
+    >
+      <Swiper
+        spaceBetween={10}
+        slidesPerView={1}
+        pagination={{
+          clickable: true
+        }}
+        freeMode
+        className=' justify-center'
+      >
+        {
         workSlider.slides.map((slide, index) => {
           return (
             <SwiperSlide key={index}>
@@ -132,7 +131,7 @@ const WorkSlider = () => {
                     <div key={`${index}-${imageIndex}`} className='relative rounded-lg overflow-hidden flex items-center justify-center group'>
                       <div className=' flex items-center justify-center relative overflow-hidden group opacity-90 rounded-xl'>
                         {/* image */}
-                        <Image className="object-cover" src={image.path} width={400} height={200} alt='' />
+                        <Image className='object-cover' src={image.path} width={400} height={200} alt='' />
                         {/* overlay gradient */}
                         <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#8e295f] to-[#1e114b] opacity-0 group-hover:opacity-80 transition-all duration-700  ' />
                         {/* tittle */}
@@ -154,7 +153,7 @@ const WorkSlider = () => {
           )
         })
 }
-    </Swiper>
+      </Swiper>
     </motion.div>
   )
 }

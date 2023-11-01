@@ -18,7 +18,7 @@ import CountrySelect from '../../components/CountrySelect'
 
 const Contact = () => {
   const [state, handleSubmit] = useForm('xjvqwlwq')
-  const [name, setName] = useState('');
+  const [name, setName] = useState('')
   if (state.succeeded) {
     return (
       <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
@@ -26,8 +26,6 @@ const Contact = () => {
       </div>
     )
   }
-
-
 
   return (
     <div className='h-full bg-primary/30'>
@@ -61,7 +59,7 @@ const Contact = () => {
                 required
                 onChange={e => {
                   if (validateName(e.target.value)) {
-                    setName(e.target.value);
+                    setName(e.target.value)
                   }
                 }}
               />
@@ -110,21 +108,21 @@ const Contact = () => {
 
 export default Contact
 
-function validateEmail(email) {
-  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
+function validateEmail (email) {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  return re.test(String(email).toLowerCase())
 }
-function validateName(name) {
-  var re = /^[a-zA-Z\s]*$/; // Nota el cambio de + a *
-  return re.test(String(name));
+function validateName (name) {
+  const re = /^[a-zA-Z\s]*$/ // Nota el cambio de + a *
+  return re.test(String(name))
 }
-function handleSubmit(e) {
-  e.preventDefault();
+function handleSubmit (e) {
+  e.preventDefault()
 
   // Obtén los valores de los campos del formulario
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
+  const name = document.getElementById('name').value
+  const email = document.getElementById('email').value
+  const message = document.getElementById('message').value
 
   // Verifica que todos los campos estén llenos y sean válidos
   if (!name || !validateName(name)) {

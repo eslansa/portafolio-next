@@ -1,27 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import Select from 'react-select';
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
+import Select from 'react-select'
 
 const CountrySelect = () => {
-  const [countries, setCountries] = useState([]);
+  const [countries, setCountries] = useState([])
 
   useEffect(() => {
     const fetchCountries = async () => {
       try {
-        const response = await axios.get('https://restcountries.com/v3.1/all');
-        setCountries(response.data);
+        const response = await axios.get('https://restcountries.com/v3.1/all')
+        setCountries(response.data)
       } catch (error) {
-        console.error(error);
+        console.error(error)
       }
-    };
+    }
 
-    fetchCountries();
-  }, []);
+    fetchCountries()
+  }, [])
 
   const options = countries.map((country) => ({
     value: country.name.common,
-    label: country.name.common,
-  }));
+    label: country.name.common
+  }))
 
   const customStyles = {
     control: (provided) => ({
@@ -35,25 +35,25 @@ const CountrySelect = () => {
       borderColor: 'rgba(255, 255, 255, 0.2)',
       '&:focus': {
         borderColor: 'accent',
-        boxShadow: '0 0 0 1px accent',
+        boxShadow: '0 0 0 1px accent'
       },
       '&::placeholder': {
         color: 'rgba(255, 255, 255, 0.3)',
-        fontWeight: '300',
-      },
+        fontWeight: '300'
+      }
     }),
     singleValue: (provided, state) => ({
       ...provided,
-      color: state.data.isSelected ? 'black' : 'white',
+      color: state.data.isSelected ? 'black' : 'white'
     }),
     option: (provided, state) => ({
       ...provided,
       backgroundColor: state.isSelected ? 'none' : 'white',
-      color: state.isSelected ? 'red' : 'black',
-    }),
-  };
+      color: state.isSelected ? 'red' : 'black'
+    })
+  }
 
-  return <Select id="country" name="country" options={options} styles={customStyles} placeholder="Nacionalidad" />;
-};
+  return <Select id='country' name='country' options={options} styles={customStyles} placeholder='Nacionalidad' />
+}
 
-export default CountrySelect;
+export default CountrySelect

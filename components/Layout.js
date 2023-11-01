@@ -1,8 +1,8 @@
 // Importa los estilos de Tailwind directamente
-import 'tailwindcss/tailwind.css';
-import { Sora } from '@next/font/google';
-import Nav from '../components/Nav';
-import Header from '../components/Header';
+import 'tailwindcss/tailwind.css'
+import { Sora } from '@next/font/google'
+import Nav from '../components/Nav'
+import Header from '../components/Header'
 
 const sora = Sora({
   subsets: ['latin'],
@@ -11,17 +11,16 @@ const sora = Sora({
 })
 
 // Definir estilos de fuente con Tailwind
-const fontStyles = 'font-sora';
+const fontStyles = 'font-sora'
 
 const Layout = ({ children }) => {
-
   return (
     <div className={`page bg-site text-white bg-cover bg-no-repeat ${fontStyles} relative`}>
       <Header />
       <Nav />
       {children}
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

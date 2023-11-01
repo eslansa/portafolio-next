@@ -28,7 +28,7 @@ const serviceData = [
     icon: <RxLayers />,
     title: 'Gestion BD',
     description: 'Gestiona todos los datos de tu aplicación con eficiencia y rápidez. Qué esperas!'
-  },
+  }
 ]
 
 const ServiceSlider = () => {

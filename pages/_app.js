@@ -11,13 +11,13 @@ function MyApp ({ Component, pageProps }) {
   return (
     <Layout>
       <NextSeo
-        title="Eslan Sanchez Alvarez"
-        description="¡Hola! Soy Eslan Sanchez Alvarez, un apasionado desarrollador web. Explora mi portafolio para conocer mi trabajo y habilidades."
-        canonical="https://eslansa.pages.dev"
+        title='Eslan Sanchez Alvarez'
+        description='¡Hola! Soy Eslan Sanchez Alvarez, un apasionado desarrollador web. Explora mi portafolio para conocer mi trabajo y habilidades.'
+        canonical='https://eslansa.pages.dev'
         openGraph={{
           url: 'https://eslansa.pages.dev',
           title: 'Eslan Sanchez Alvarez',
-          description: '¡Hola! Soy Eslan Sanchez Alvarez, un apasionado desarrollador web. Explora mi portafolio para conocer mi trabajo y habilidades.',
+          description: '¡Hola! Soy Eslan Sanchez Alvarez, un apasionado desarrollador web. Explora mi portafolio para conocer mi trabajo y habilidades.'
           // images: [
           //   {
           //     url: 'https://example.com/image.jpg', // Reemplaza esto con la URL de tu imagen
@@ -26,12 +26,11 @@ function MyApp ({ Component, pageProps }) {
           //     alt: 'Descripción de la imagen', // Reemplaza esto con la descripción de tu imagen
           //   },
           // ],
-        }
-      }
+        }}
         twitter={{
           handle: '@lil_eslan',
           site: '@lil_eslan',
-          cardType: 'summary_large_image',
+          cardType: 'summary_large_image'
         }}
       />
       <AnimatePresence mode='wait'>

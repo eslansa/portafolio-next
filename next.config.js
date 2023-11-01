@@ -6,8 +6,8 @@ const nextConfig = {
     runtime: 'experimental-edge'
   },
   images: {
-    formats: ['image/avif', 'image/webp'],
-  },
+    formats: ['image/avif', 'image/webp']
+  }
 }
 
 module.exports = nextConfig

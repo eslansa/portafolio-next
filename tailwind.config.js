@@ -20,7 +20,7 @@ module.exports = {
       md: '768px',
       lg: '960px',
       xl: '1200px',
-      'custom': '1201px',
+      custom: '1201px'
     },
     extend: {
       colors: {
@@ -34,7 +34,7 @@ module.exports = {
         circleStar: 'url("/circle-star.svg")',
         site: 'url("/site-bg.svg")',
         hero: 'url("/img/hero-pattern.svg")',
-        top: 'url("/top-left-img.webp")',
+        top: 'url("/top-left-img.webp")'
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite'
@@ -50,7 +50,7 @@ module.exports = {
       DEFAULT: '15px'
     }
   },
-  
+
   plugins: [require('tailwind-scrollbar')]
-  
+
 }

@@ -18,6 +18,7 @@ import CountrySelect from '../../components/CountrySelect'
 
 const Contact = () => {
   const [state, handleSubmit] = useForm('xjvqwlwq')
+  const [name, setName] = useState('');
   if (state.succeeded) {
     return (
       <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
@@ -54,11 +55,19 @@ const Contact = () => {
                 placeholder='Nombre'
                 type='text'
                 className='input truncate truncate::placeholder'
-                id='message'
-                name='message'
+                id='name'
+                name='name'
+                value={name}
+                required
+                onChange={e => {
+                  if (validateName(e.target.value)) {
+                    setName(e.target.value);
+                  }
+                }}
               />
-  
-             <CountrySelect />
+
+              <CountrySelect required />
+
             </div>
             <input
               id='email'
@@ -66,18 +75,21 @@ const Contact = () => {
               name='email'
               placeholder='Email'
               className='input '
+              required
               onChange={e => {
                 if (!validateEmail(e.target.value)) {
                   // mostrar mensaje de error
                 }
               }}
             />
+
             <textarea
               id='message'
               className='textarea'
               name='message'
               type='text'
               placeholder='Mensaje'
+              required
             />
             <ValidationError
               prefix='Message'
@@ -101,4 +113,27 @@ export default Contact
 function validateEmail(email) {
   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
+}
+function validateName(name) {
+  var re = /^[a-zA-Z\s]*$/; // Nota el cambio de + a *
+  return re.test(String(name));
+}
+function handleSubmit(e) {
+  e.preventDefault();
+
+  // Obtén los valores de los campos del formulario
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  // Verifica que todos los campos estén llenos y sean válidos
+  if (!name || !validateName(name)) {
+    // Mostrar mensaje de error para el nombre
+  } else if (!email || !validateEmail(email)) {
+    // Mostrar mensaje de error para el email
+  } else if (!message) {
+    // Mostrar mensaje de error para el mensaje
+  } else {
+    // Todos los campos están llenos y son válidos, puedes proceder con el envío del formulario
+  }
 }

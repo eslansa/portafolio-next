@@ -12,6 +12,9 @@ import { motion } from 'framer-motion'
 
 // variants
 import { fadeIn } from '../../variants'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
+import CountrySelect from '../../components/CountrySelect'
 
 const Contact = () => {
   const [state, handleSubmit] = useForm('xjvqwlwq')
@@ -22,6 +25,8 @@ const Contact = () => {
       </div>
     )
   }
+
+
 
   return (
     <div className='h-full bg-primary/30'>
@@ -52,13 +57,8 @@ const Contact = () => {
                 id='message'
                 name='message'
               />
-              <input
-                placeholder='País'
-                className='input'
-                id='message'
-                name='message'
-                type='text'
-              />
+  
+             <CountrySelect />
             </div>
             <input
               id='email'
@@ -66,11 +66,11 @@ const Contact = () => {
               name='email'
               placeholder='Email'
               className='input '
-            />
-            <ValidationError
-              prefix='Email'
-              field='email'
-              errors={state.errors}
+              onChange={e => {
+                if (!validateEmail(e.target.value)) {
+                  // mostrar mensaje de error
+                }
+              }}
             />
             <textarea
               id='message'
@@ -97,3 +97,8 @@ const Contact = () => {
 }
 
 export default Contact
+
+function validateEmail(email) {
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}

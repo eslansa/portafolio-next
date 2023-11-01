@@ -29,7 +29,7 @@ const Home = () => {
             className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
             variants={fadeIn('down', 0.3)} initial='hidden' animate='show' exit='hidden'
           >
-           "Soy Eslán Sánchez Alvarez, tengo 22 años, estoy estudiando Ingienería en Ciencias Informáticas en la UCI, La Habana. Me fascina el desarrollo web, sobre todo el Frontend. <br /> Revisa mis proyectos y visita la página."    </motion.p>
+            Soy Eslán Sánchez Alvarez, tengo 22 años, estoy estudiando Ingienería en Ciencias Informáticas en la UCI, La Habana. Me fascina el desarrollo web, sobre todo el Frontend. <br /> Revisa mis proyectos y visita la página.</motion.p>
           {/* btn */}
           <motion.div variants={fadeIn('down', 0.4)} initial='hidden' animate='show' exit='hidden' className='hidden xl:flex'>
             <ProjectsBtn />

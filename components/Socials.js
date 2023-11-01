@@ -29,9 +29,10 @@ const Socials = () => {
       <Link href='https://github.com/eslansa' className='hover:text-accent transition-all duration-300'>
         <RiGithubLine />
       </Link>
-      <a href='/CV-Eslan Sanchez Alvarez.pdf' download className='hover:text-accent transition-all duration-300' locale={false}>
-        <AiOutlineProfile />
-      </a>
+      <a href='https://drive.google.com/uc?export=download&id=17yR0DhSXAiXa8W8hnBZzNeEigXTwfxUP' className='hover:text-accent transition-all duration-300'>
+  <AiOutlineProfile />
+</a>
+
     </div>
   )
 }

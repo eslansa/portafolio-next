@@ -48,7 +48,7 @@ const Contact = () => {
             className='flex-1 flex flex-col gap-2 w-full mx-auto'
           >
             {/* group */}
-            <div className='flex gap-x-6 w-full'>
+            <div className='gap-x-6 w-full'>
               <input
                 placeholder='Nombre'
                 type='text'

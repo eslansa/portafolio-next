@@ -24,36 +24,49 @@ const CountrySelect = () => {
   }))
 
   const customStyles = {
-    control: (provided) => ({
+    control: (provided, state) => ({
       ...provided,
-      height: 52,
-      width: 330,
+      borderColor: state.isFocused ? '#F13024' : provided.borderColor,
+      boxShadow: state.isFocused ? '0 0 0 1px #F13024' : provided.boxShadow,
+      '&:hover': {
+        borderColor: state.isFocused ? 'none' : provided.borderColor,
+      },
+      height: '52px',
+      width: '100%',
       borderRadius: '0.5rem',
-      paddingLeft: '1.5rem',
-      textTransform: 'capitalize',
+      paddingLeft: '1rem',
+      marginTop: '0.5rem',
+      textTransform: 'capitaliz',
       backgroundColor: 'transparent',
       borderColor: 'rgba(255, 255, 255, 0.2)',
       '&:focus': {
-        borderColor: 'accent',
-        boxShadow: '0 0 0 1px accent'
+        borderColor: '#F13024',
+        boxShadow: '0 0 0 1px #F13024'
       },
       '&::placeholder': {
         color: 'rgba(255, 255, 255, 0.3)',
         fontWeight: '300'
-      }
+      },
     }),
     singleValue: (provided, state) => ({
       ...provided,
-      color: state.data.isSelected ? 'black' : 'white'
+      color: state.data.isSelected ? 'black' : 'white',
+      textAlign: 'left',
     }),
     option: (provided, state) => ({
       ...provided,
       backgroundColor: state.isSelected ? 'none' : 'white',
       color: state.isSelected ? 'red' : 'black'
-    })
+    }),
+    placeholder: (defaultStyles) => {
+      return {
+        ...defaultStyles,
+        textAlign: 'left', // Alinea el texto a la izquierda en el placeholder
+      }
+    }
   }
 
-  return <Select id='country' name='country' options={options} styles={customStyles} placeholder='Nacionalidad' />
+  return <Select id='country' name='country' options={options} styles={customStyles} placeholder='Pais' />
 }
 
 export default CountrySelect

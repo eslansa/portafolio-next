@@ -25,7 +25,7 @@ const Work = () => {
             </motion.h2>
             <motion.p
               variants={fadeIn('up', 0.4)} initial='hidden' animate='show' exit='hidden'
-              className='mb-4 max-w-[400px] mx-auto lg:mx-0 hidden sm:flex '
+              className='mb-4 max-w-[400px] mx-auto lg:mx-0 sm:flex '
             > Visita mis proyectos, tienen repositorios en GitHub públicos, exceptos los trabajos reales para proteger a las empresas.
             </motion.p>
           </div>

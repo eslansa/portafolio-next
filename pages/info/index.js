@@ -102,7 +102,7 @@ const About = () => {
           <motion.h2
             variants={fadeIn('right', 0.4)} initial='hidden' animate='show' exit='hidden'
             className='h2'
-          >Datos <span className=' text-accent'><br /> sobre mi</span> en el <span className=' text-accent'>desarrollo web</span>
+          ><span className='text-accent'>Datos</span><br /> en el <span className=' text-accent'>desarrollo web</span>
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden'

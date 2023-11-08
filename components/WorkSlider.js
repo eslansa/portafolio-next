@@ -82,6 +82,19 @@ const workSlider = {
           ]
         },
       ]
+    },
+    {
+      images: [
+        {
+          title: 'title',
+          path: '/bucador_peliculas.png',
+          icon: [
+            'SiVite',
+            'SiReact',
+            'SiMui'
+          ]
+        },
+      ]
     }
 
   ]

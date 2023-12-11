@@ -15,13 +15,13 @@ const fontStyles = 'font-sora'
 
 const Layout = ({ children }) => {
   return (
-    <html lang='es'>
-      <body className={`page bg-site text-white bg-cover bg-no-repeat ${fontStyles} relative`}>
+    <div>
+      <div className={`page bg-site text-white bg-cover bg-no-repeat ${fontStyles} relative`}>
         <Header />
         <Nav />
         {children}
-      </body>
-    </html>
+      </div>
+    </div>
   )
 }
 

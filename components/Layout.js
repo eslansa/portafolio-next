@@ -3,6 +3,7 @@ import 'tailwindcss/tailwind.css'
 import { Sora } from '@next/font/google'
 import Nav from '../components/Nav'
 import Header from '../components/Header'
+import Head from 'next/head'
 
 const sora = Sora({
   subsets: ['latin'],
@@ -17,6 +18,9 @@ const Layout = ({ children }) => {
   return (
     <div>
       <div className={`page bg-site text-white bg-cover bg-no-repeat ${fontStyles} relative`}>
+        <Head>
+        <meta name='google-site-verification' content='7pY3HSqGDEy_LyhtYnPQmWomQGWQkC740Gmb9Qk6_FI' />
+        </Head>
         <Header />
         <Nav />
         {children}

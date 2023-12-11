@@ -6,7 +6,7 @@ import Socials from '../components/Socials'
 
 const Header = () => {
   return (
-    <header className='absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]'>
+    <head className='absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]'>
       <meta name="google-site-verification" content="7pY3HSqGDEy_LyhtYnPQmWomQGWQkC740Gmb9Qk6_FI" />
       <script type='text/javascript' id='pagemapIdscript' defer src='https://bot.linkbot.com/bot.js#19613-7fb33?property-id=19613-7fb33' />
       <div className=' container mx-auto'>
@@ -19,7 +19,7 @@ const Header = () => {
           <Socials />
         </div>
       </div>
-    </header>
+    </head>
   )
 }
 

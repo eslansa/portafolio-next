@@ -29,7 +29,7 @@ const Socials = () => {
       <Link href='https://github.com/eslansa' className='hover:text-accent transition-all duration-300'>
         <RiGithubLine />
       </Link>
-      <a href='https://drive.google.com/uc?export=download&id=17yR0DhSXAiXa8W8hnBZzNeEigXTwfxUP' className='hover:text-accent transition-all duration-300'>
+      <a href='https://drive.google.com/file/d/1Vrleigq1aDQf9GG-_3zfHdXTf6_V8cdE/view?usp=drive_link' className='hover:text-accent transition-all duration-300'>
   <AiOutlineProfile />
 </a>
 

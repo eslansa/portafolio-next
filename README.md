@@ -1,4 +1,4 @@
-# Portafolio Web
+# Portafolio Web Personal
 
 El proyecto implica la creación de un portafolio web personalizado para destacar las habilidades, experiencias y proyectos sobresalientes de un profesional o creativo. Este portafolio servirá como una plataforma digital para exhibir el trabajo del individuo de manera atractiva y accesible, ofreciendo a los visitantes una visión completa de su perfil y trayectoria, así como también información de contacto y detalles relevantes sobre su trabajo.
 
